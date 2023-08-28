@@ -1,0 +1,65 @@
+*{
+    background-color: linear-gradient(green, black);
+}
+.container {
+    margin: 0 auto;
+    background: linear-gradient(black, grey);
+    width: 100vw;
+    height: 100vh;
+  }
+  .container .row {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    
+  }
+  .container .row .col{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    animation-name: despegue, vuelo;
+    animation-duration: 20s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 20;
+    animation-direction: alternate;
+  }
+
+  button {
+    width: 160px;
+    background-image: url(./spoty.png);
+    background-size: cover;
+    color: white;
+    height: 65px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: rgb(23, 175, 23);
+    width: 165px;
+}
+
+  @keyframes despegue {
+    from {
+      bottom: -600px;
+    }
+    to {
+      bottom: 0px;
+    }
+  }
+  @keyframes vuelo {
+    0% {
+      left: 100px;
+    }
+    25% {
+      left: 500px;
+    }
+    50% {
+      left: 900px;
+    }
+    75% {
+      left: 500px;
+    }
+    100% {
+      left: 100px;
+    }
+  }

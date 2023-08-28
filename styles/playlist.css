@@ -1,0 +1,13 @@
+.color{
+    background-color: linear-gradient(red, black);
+}
+
+.imageSize {
+    width: 150px;
+}
+
+.name{
+    background-color: linear-gradient(green, black);
+    color: white;
+    justify-content: center;
+}
